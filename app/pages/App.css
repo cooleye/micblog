@@ -1,0 +1,41 @@
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+}
+
+.item{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item .item_icon{
+    height: 30px;
+}
+.item .item_icon img{
+  height: 100%;
+}
+
+.item .item_word{
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+}
