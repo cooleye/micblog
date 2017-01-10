@@ -2,11 +2,11 @@
     background-color: #fff;
     position: fixed;
     z-index: 100;
-    top: 0;
+    top: -2px;
     left: 0;
     right: 0;
-    height: 45px;
-    line-height: 45px;
+    height: 47px;
+    line-height: 47px;
     display: flex;
 }
 

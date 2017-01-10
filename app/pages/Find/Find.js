@@ -6,11 +6,9 @@ export default class extends Component{
     render(){
         return(
             <div>
-                <Header/>
+                <Header title={"发现"}/>
                 <div className={Styles.container}>
-                    <Message/>
-                    <Message/>
-                    <Message/>
+                   <div>发现页面</div>
                 </div>
             </div>
         )

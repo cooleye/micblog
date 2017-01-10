@@ -8,7 +8,7 @@ import Home from './pages/Home/Home';
 import Mine from './pages/Mine/Mine';
 import Messa from './pages/Messa/Messa';
 import Find from './pages/Find/Find';
-
+import EditPage from './pages/Edit/EditPage';
 
 var router = 
   <Router history={hashHistory}>
@@ -19,6 +19,7 @@ var router =
       <Route path="/find" component={Find} />
       <Route path="/mine" component={Mine} />
     </Route>
+    <Route path="/edit" component={EditPage} />
   </Router>
 
 

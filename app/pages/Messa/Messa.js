@@ -6,11 +6,9 @@ export default class extends Component{
     render(){
         return(
             <div>
-                <Header/>
+                <Header title={"消息"}/>
                 <div className={Styles.container}>
-                    <Message/>
-                    <Message/>
-                    <Message/>
+                   <div>消息页面</div>
                 </div>
             </div>
         )

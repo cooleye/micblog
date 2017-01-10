@@ -3,3 +3,45 @@
     height: 100%;
     margin-top: 100px;
 }
+
+.profile{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.profile_up{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 3;
+    border-bottom: solid 1px #ddd;
+    flex-direction: row;
+}
+.profile_down{
+    width: 100%;
+    flex: 2;
+}
+.profile_head{
+    flex: 1;
+    width: 100%;
+    height: 40%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.profile_head img{
+   height: 100%;
+}
+.profile_name{
+    flex: 5
+}
+.item{
+    width: 100%;
+    height: 45px;
+    border-bottom: solid 1px #ddd;
+    margin-top: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 1px #ddd;
+}
