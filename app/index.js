@@ -6,7 +6,8 @@ import './index.css';
 
 import Home from './pages/Home/Home';
 import Mine from './pages/Mine/Mine';
-
+import Messa from './pages/Messa/Messa';
+import Find from './pages/Find/Find';
 
 
 var router = 
@@ -14,6 +15,8 @@ var router =
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/home" component={Home} />
+      <Route path="/message" component={Messa} />
+      <Route path="/find" component={Find} />
       <Route path="/mine" component={Mine} />
     </Route>
   </Router>

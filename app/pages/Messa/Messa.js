@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from '../../components/Header/Header';
 import Message from '../../components/Message/Message';
-import Styles from './Mine.css';
+import Styles from './Messa.css';
 export default class extends Component{
     render(){
         return(

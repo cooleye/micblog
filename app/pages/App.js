@@ -1,25 +1,38 @@
 import React, {Component} from 'react';
 import styles from './App.css';//导入
 import {Link } from 'react-router';
-
+// import FontAwesome from '../../node_modules/font-awesome/css/font-awesome.css';
+import FontAwesome from '../common/css/font-awesome.css';
+const ACTIVE = { color: '#f87d05',
+borderBottom:'solid 2px #f87d05'
+ }
 
 export default class extends Component{
   render(){
     return(
         <div className={styles.cover}>
               <div className={styles.container}>
-
                     <div className={styles.item}>
-                      <Link to="/home">
-                      <div className={styles.item_icon}><img src="http://s2.juancdn.com/bao/160914/0/d/57d8ca99151ad109618b4584_72x72.png"/></div>
+                      <Link to="/home"  activeStyle={ACTIVE}>
                       <div className={styles.item_word}><span>首页</span></div>
                       </Link>
                     </div>
 
                      <div className={styles.item}>
-                      <Link to="/mine">
-                      <div className={styles.item_icon}><img src="http://s2.juancdn.com/bao/160914/0/d/57d8ca99151ad109618b4584_72x72.png"/></div>
-                      <div className={styles.item_word}><span>我的</span></div>
+                      <Link to="/message" activeStyle={ACTIVE} >
+                      <div className={styles.item_word}><span>消息</span></div>
+                      </Link>
+                    </div>
+
+                     <div className={styles.item}>
+                      <Link to="/find" activeStyle={ACTIVE} >
+                      <div className={styles.item_word}><span>发现</span></div>
+                      </Link>
+                    </div>
+
+                     <div className={styles.item}>
+                      <Link to="/mine" activeStyle={ACTIVE} >
+                      <div className={styles.item_word}><span>我</span></div>
                       </Link>
                     </div>
 

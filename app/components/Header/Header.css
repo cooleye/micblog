@@ -1,0 +1,34 @@
+.container{
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+}
+
+.icons{
+    width: 100%;height: 100%;
+}
+.write{
+  background-image: url('../../static/icons/wbicon_03.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+}
+
+.search{
+  background-image: url('../../static/icons/wbicon_05.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+}
+.reload{
+  background-image: url('../../static/icons/wbicon_07.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
