@@ -14,9 +14,12 @@ export default class extends Component{
                   </div>
                   <div style={{padding:10,}}>
                     <p>{this.props.info.news}</p>
+                    <div className={Styles.newImgContainer}>
+                        <img src={this.props.info.pic}/>
+                    </div>
                   </div>
                 </div>
-                <div></div>
+                
             </div>
         )
     }

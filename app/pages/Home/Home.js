@@ -6,7 +6,6 @@ import 'whatwg-fetch';
 
 export default class extends Component{
 
-
     constructor(props){
         super(props);
         this.state = {
@@ -14,13 +13,11 @@ export default class extends Component{
         }
     }
 
-
     componentDidMount(){
         fetch('http://localhost:3000/getnews')
         .then(function(response) {
             return response.json()
         }).then(function(json) {
-            // console.log('parsed json', this)
             this.buildRenderList(json);
         }.bind(this)).catch(function(ex) {
             console.log('parsing failed', ex)
@@ -28,7 +25,7 @@ export default class extends Component{
     }
 
     buildRenderList(json){
-        // console.log(json)
+        console.log(json)
         var arr = json.data;
         arr = arr.map(function(i){
             return <Message key={i.id} info={i} />
@@ -40,17 +37,12 @@ export default class extends Component{
         console.log(this.state.dataResource)
     }
 
-
-
-
     render(){
         return(
             <div>
                 <Header title={"孔方成"}/>
                 <div className={Styles.container}>
-                   
                    {this.state.dataResource}
-            
                 </div>
             </div>
         )

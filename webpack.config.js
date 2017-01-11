@@ -37,6 +37,8 @@ module.exports = {
   devServer: {
    colors: true,
    historyApiFallback: true,
-   inline: true
+   inline: true,
+   host:'localhost',
+   port:'8080'
  }
 }

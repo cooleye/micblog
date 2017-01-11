@@ -15,8 +15,17 @@
   padding-left:10px;
   margin-top: 10px;
 }
-
+.headPortrait img{
+  border-radius: 100px;
+}
 .name{
   flex: 5;
   line-height: 60px;
+}
+.newImgContainer{
+  width: 100%;
+  padding: 10px;
+}
+.newImgContainer img{
+  width: 100%;
 }
